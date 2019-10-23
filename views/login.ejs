@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/core.css">
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Divice -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="wrapper">
+        <div class="content">
+          <h2>Đăng nhập</h2>
+          <% if(error != ""){ %>
+            <div class="err"><%= error %></div>
+          <% } %>
+          <form class="fs" method="post">
+            <input type="text" name="email" placeholder="Email/Tài khoản đăng nhập"></br>
+            <input type="text" name="password" placeholder="Mật khẩu đăng nhập"></br>
+            <input type="submit" name="submit" value="Đăng nhập">
+          </form>
+          <a href="/register" style="display: block; margin-top:10px; float:right;">Đăng ký tài khoản</a>
+          <div class="clx"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

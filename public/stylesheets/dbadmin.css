@@ -1,0 +1,37 @@
+#wrapper{
+  margin: auto;
+  /* max-width: 780px; */
+}
+.wrapper{
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  min-height: 100vh;
+}
+.top{
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  height: 40px;
+}
+.top .logo{
+  float: left;
+}
+.top .logo h2{
+  font-size: 16px;
+  text-transform: uppercase;
+  /* color: #1a73e8; */
+}
+.top .user{
+  float: right;
+}
+.main{
+  padding: 10px;
+}
+td img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main .create{
+  display: inline-block;
+  /* margin-top:20px; */
+}

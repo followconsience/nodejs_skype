@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Update image</title>
+    <link rel="stylesheet" href="/stylesheets/core.css">
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Divice -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="wrapper">
+        <div class="content">
+          <a href="/" style="display: block; margin-bottom:10px;">Trở về trang chủ</a>
+          <h2>Cập nhật ảnh đại diện</h2>
+          <div class="avatar">
+            <img src="/avatar/<%= user.avatar %>">
+          </div>
+          <% if(error != ""){ %>
+            <div class="err"><%= error %></div>
+          <% } %>
+          <form class="fs" method="post" enctype="multipart/form-data">
+            <input type="file" name="avatar" title="Chọn ảnh cập nhật" accept="image/*"></br>
+            <input type="submit" name="submit" value="Cập nhật">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

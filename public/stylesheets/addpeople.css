@@ -1,0 +1,67 @@
+#wrapPopup2 .popup .total {
+    max-width: 600px;
+}
+.search-input, .result, .friends{
+  background: #fff;
+  width: 100%;
+}
+.search-input{
+  height: 50px;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.result{
+  padding: 10px;
+}
+.friends{
+  border-top: 1px solid #ccc;
+  padding: 10px;
+}
+.member{
+  border-radius: 20px;
+  display: inline-block;
+  background: #EEF6F9;
+  margin-bottom: 5px;
+}
+.member:hover{
+  background: #C7EDFC;
+}
+.member img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+.member span.name {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    float: left;
+    margin-left: 10px;
+}
+.member span.remove {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.friends h2{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.friends .member{
+  background: #fff;
+  display: block;
+  cursor: pointer;
+}
+.friends .member:hover{
+  background: #C7EDFC;
+}
+.friends .member:last-child{
+  margin-bottom: 0px;
+}

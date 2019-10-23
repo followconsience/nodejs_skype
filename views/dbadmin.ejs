@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DBAdmin</title>
+    <link rel="stylesheet" href="/stylesheets/core.css">
+    <link rel="stylesheet" href="/stylesheets/dbadmin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Divice -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="wrapper">
+        <div class="top">
+          <div class="logo">
+              <h2>DB Administrator</h2>
+          </div>
+          <div class="user">
+            <span>Howdy friend, <b><%= user.username %></b></span>
+            <a href="/">Home</a> |
+            <a href="/dbadmin">DBAdmin</a> |
+            <a href="/dbmaintain">Maintain</a> |
+            <a href="/logout">Logout</a>
+          </div>
+          <div class="clx"></div>
+        </div>
+        <div class="main">
+          <table class="th">
+            <thead>
+              <tr>
+                <th>TT</th>
+                <th>Tài khoản</th>
+                <th>Email đăng nhập</th>
+                <th>Họ và tên</th>
+                <th>Ảnh</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if(data.length){ %>
+                <% data.forEach(function(item, index){ %>
+                  <tr>
+                    <td><%= index+1 %></td>
+                    <td><%= item.username %></td>
+                    <td><%= item.email %></td>
+                    <td><%= item.fullname %></td>
+                    <td> <img src="/avatar/<%= item.avatar %>"> </td>
+                    <td><a href="#">Sửa</a></td>
+                    <td><a href="#">Xóa</a></td>
+                  </tr>
+                <% }); %>
+              <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

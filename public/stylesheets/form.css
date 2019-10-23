@@ -1,0 +1,25 @@
+#wrapper{
+  display: table;
+  height: 90vh;
+  overflow: hidden;
+  width: 320px;
+  margin: auto;
+}
+.wrapper{
+  display: table-cell;
+  vertical-align: middle;
+}
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.content{
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.avatar img{
+  width: 100px;
+}

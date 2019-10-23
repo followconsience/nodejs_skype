@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WeGive</title>
+    <link rel="stylesheet" href="public/stylesheets/core.css">
+    <link rel="stylesheet" href="public/stylesheets/home.css">
+    <!-- <script src="public/javascripts/jquery.js"></script>
+    <script src="public/javascripts/core.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="public/javascripts/xuly.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Divice -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="wrapper">
+        <div class="main">
+          <div class="left">
+            <!-- Avatar and setting -->
+            <div class="sub_nav current">
+              <a href="#"><img src="public/images/user.png"></a>
+              <div class="">
+                <span>Nguyễn Hữu Hiệp</span>
+                <p>Online</p>
+              </div>
+            </div>
+            <!-- Search -->
+            <form class="fs" action="" method="post">
+              <input type="text" placeholder="Search Wegive">
+            </form>
+            <!-- Add friend and setting -->
+            <div class="sub_nav setting">
+              <div>
+                <a href="#" title="Danh sách bạn bè">
+                  <img class="ct" src="public/images/contact.png">
+                  <span class="notice">35</span>
+                </a>
+                <a href="#" title="Tạo nhóm chát">
+                  <img class="ct" src="public/images/create.png">
+                </a>
+                <a href="#" title="Cài đặt tài khoản">
+                  <img src="public/images/account_setting.png">
+                </a>
+                <a href="#" title="Đăng xuất">Logout</a>
+              </div>
+            </div>
+
+            <!-- Group-->
+            <div class="sub_nav">
+              <h2 class="group" title="Create a group">Groups</h2>
+              <ul>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/group.png">
+                    <span class="name">PC ONE</span>
+                    <span class="online"></span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li class="active">
+                  <div class="gava">
+                    <img src="public/images/group.png">
+                    <span class="name">PC ONE</span>
+                    <span class="online"></span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/group.png">
+                    <span class="name">PC ONE</span>
+                    <span class="notice">6</span>
+                    <span class="online"></span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Friend -->
+            <div class="sub_nav">
+              <h2>Friends</h2>
+              <ul>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <span class="notice">35</span>
+                    <span class="online"></span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="gava">
+                    <img src="public/images/user.png">
+                    <span class="name">Roller</span>
+                    <div class="clx"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Main content -->
+          <div class="right">
+            <div class="header">
+              <div class="avatar">
+                <img class="img1" src="public/images/group.png">
+                <span>Công ty Cổ phần PC ONE</span>
+                <img title="Thêm thành viên" class="img2" src="public/images/add_person.png">
+                <div class="clx"></div>
+              </div>
+            </div>
+            <div class="wechat">
+              <div class="chatbox">
+                <div class="allmss">
+                  <img src="public/images/loading.gif" style="width:30px;">
+                  <div class="message" title="9:05 14/10/2018">
+                    <img src="public/images/user.png">
+                    <div class="userchat">
+                      <span>Bùi Đức Dương</span>
+                    </div>
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                  <div class="message" title="9:05 14/10/2018">
+                    <img src="public/images/user.png">
+                    <div class="userchat">
+                      <span>Bùi Đức Dương</span>
+                    </div>
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                  <div class="message" title="9:05 14/10/2018">
+                    <img src="public/images/user.png">
+                    <div class="userchat">
+                      <span>Bùi Đức Dương</span>
+                    </div>
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                  <div class="message" title="9:05 14/10/2018">
+                    <img src="public/images/user.png">
+                    <div class="userchat">
+                      <span>Bùi Đức Dương</span>
+                    </div>
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                  <div class="message mine" title="9:05 14/10/2018">
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                  <div class="message" title="9:05 14/10/2018">
+                    <img src="public/images/user.png">
+                    <div class="userchat">
+                      <span>Bùi Đức Dương</span>
+                    </div>
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                  <div class="message" title="9:05 14/10/2018">
+                    <img src="public/images/user.png">
+                    <div class="userchat">
+                      <span>Bùi Đức Dương</span>
+                    </div>
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                  <div class="message" title="9:05 14/10/2018">
+                    <img src="public/images/user.png">
+                    <div class="userchat">
+                      <span>Bùi Đức Dương</span>
+                    </div>
+                    <div class="mss">
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                      <span>Welcome to the real world</span>
+                    </div>
+                    <div class="clx"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="typing">
+                <i>Roller is typing...</i>
+              </div>
+              <div class="textbox">
+                <form class="fs" action="" method="post">
+                  <textarea name="name" placeholder="Type a message here"></textarea>
+                  <label for="attach">  <img class="icon1" title="Gửi ảnh/file đính kèm" src="public/images/attach.png"></label>
+                  <input style="display:none;" type="file" name="file" id="attach">
+                  <img class="icon2" title="Send" src="public/images/send.png">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="wrapPopup2">
+          <div class="popup">
+      			<div class="total">
+      				<div class="top">
+      					<h1>Create an group chat</h1><button class="close" title="Close">X</button>
+      				</div>
+              <form class="fs" method="post">
+      					<input type="text" name="groupname" class="groupname" placeholder="Name"><br>
+      				</form>
+              <input type="button" id="btnTaoRoom" value="Create">
+      			</div>
+      		</div>
+    		</div>
+      </div>
+    </div>
+  </body>
+</html>

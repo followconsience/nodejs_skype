@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WeGive</title>
+    <link rel="stylesheet" href="/stylesheets/core.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/addpeople.css">
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/core.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/myscript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Divice -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="wrapper">
+        <div class="main">
+          <div class="left">
+            <!-- Avatar and setting -->
+            <div class="sub_nav current">
+              <a title="Chọn ảnh để cập nhật" href="/updateimg"><img src="/avatar/<%= data.user.avatar %>"></a>
+              <div class="">
+                <% if(data.user.role == 1985){ %>
+                    <a href="/dbadmin"><span><%= data.user.fullname %></span></a>
+                <% }else{ %>
+                    <span><%= data.user.fullname %></span>
+                <% } %>
+                <p class="status">Online</p>
+              </div>
+            </div>
+            <!-- Search -->
+            <form class="fs" action="" method="post">
+              <input type="text" placeholder="Search Wegive">
+            </form>
+            <!-- Add friend and setting -->
+            <div class="sub_nav setting">
+              <div>
+                <a title="Danh sách bạn bè">
+                  <img class="ct ct1" src="/images/contact.png">
+                  <span class="notice">35</span>
+                </a>
+                <a title="Tạo nhóm chát">
+                  <img class="ct ct2" src="/images/create.png">
+                </a>
+                <a href="/update" title="Cài đặt tài khoản">
+                  <img src="/images/account_setting.png">
+                </a>
+                <a href="/logout" title="Đăng xuất">Logout</a>
+              </div>
+            </div>
+
+            <!-- Group-->
+            <div class="sub_nav sub_nav1">
+              <h2 class="group" title="Create a group">Groups</h2>
+              <ul>
+                <% if(data.dbgroup.length){ %>
+                  <% data.dbgroup.forEach(function(item){ %>
+                    <li>
+                      <div class="gava" room="<%= item._id %>">
+                        <img src="/images/group.png">
+                        <span class="name"><%= item.title %></span>
+                        <span class="online"></span>
+                        <div class="clx"></div>
+                      </div>
+                    </li>
+                  <% })%>
+                <% }else{ %>
+                  <li>Not group found</li>
+                <% } %>
+              </ul>
+            </div>
+            <!-- Friend -->
+            <div class="sub_nav sub_nav2">
+              <h2>Friends</h2>
+              <ul>
+                <% if(data.dbaccount.length){ %>
+                  <% data.dbaccount.forEach(function(item){ %>
+                    <li>
+                      <div class="gava">
+                        <img src="/avatar/<%= item.avatar %>">
+                        <span class="name"><%= item.fullname %></span>
+                        <!-- <span class="notice">35</span> -->
+                        <span class="online"></span>
+                        <div class="clx"></div>
+                      </div>
+                    </li>
+                  <% })%>
+                <% } %>
+              </ul>
+            </div>
+          </div>
+          <!-- Main content -->
+          <div class="right">
+            <img class="trademark" src="images/home.png">
+            <textarea currentroom="none" style="display:none;"></textarea>
+          </div>
+        </div>
+        <div id="wrapPopup2">
+          <div class="popup">
+      			<div class="total">
+
+      			</div>
+      		</div>
+    		</div>
+      </div>
+    </div>
+  </body>
+</html>
